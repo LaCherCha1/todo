@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: rgb(128, 224, 215);
+}
+.container{
+  width: 60%;
+  margin: 5em auto;
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px;
+  padding: 1.15em;
+  box-shadow: 0px 0px 10px 10px white;
+}
+
+.header h1{
+  font-size: 1.3em;
+}
+.header .text-input{
+  width: 90%;
+  height: 3em;
+  padding: 1em;
+}
+
+.header .btn{
+  width: 10%;
+  height: 3em;
+  text-align: center;
+  background-color: rgb(18, 137, 235);
+  color:white;
+  border: 0;
+  cursor: pointer;
+}
+
+.list{
+  list-style: none;
+  padding: 0;
+  
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+}
+
+.del{
+  color: red;
+  font-size: .8em;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 10px;
+  box-sizing: initial;
+}
+.del:hover{
+  border: 1px solid red;  
+}
+
+.list label {
+  cursor: pointer;
+  position: relative; 
+  padding-left: 35px;
+}
+.checkbox{
+  display: none;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+}
+.list li:hover{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.list li:hover  .checkmark {
+  background-color: rgba(18, 137, 235);
+  border-color: white;
+}
+.list li:hover  .checkmark:after {
+  border-color: white;
+}
+
+.checkbox:checked ~ .checkmark {
+  /* background-color: rgb(18, 137, 235); */
+  border: 1px solid rgb(18, 137, 235);
+}
+
+.checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(18, 137, 235);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+@media screen and (max-width:700px){
+
+  .container{
+    width: 100%;
+    border-left: 0;
+    border-right: 0;
+    box-shadow: 0px 0px;
+    border-radius: 0;
+  }
+  
+
+}

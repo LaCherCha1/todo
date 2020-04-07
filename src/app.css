@@ -11,7 +11,7 @@ body{
   background-color: rgb(230, 230, 230);
   border-radius: 10px;
   padding: 1.15em;
-  box-shadow: 0px 0px 10px 10px white;
+  box-shadow: 0px 0px 25px 0px #333
 }
 
 .header h1{
@@ -20,7 +20,7 @@ body{
 .header .text-input{
   width: 90%;
   height: 3em;
-  padding: 1em;
+  padding: 1em;  
 }
 
 .header .btn{
@@ -52,6 +52,7 @@ body{
   background-color: transparent;
   padding: 10px;
   box-sizing: initial;
+  z-index: 2;
 }
 .del:hover{
   border: 1px solid red;  
